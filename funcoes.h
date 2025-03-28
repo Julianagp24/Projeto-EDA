@@ -39,4 +39,9 @@ LocalNefasto* deduzirLocaisNefastos(Antena *lista);
 void listarLocaisNefastos(LocalNefasto *lista);
 Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro);
 
+/*
+    Função para salvar antenas em binário
+*/
+void salvarAntenasBinario(ListaAntenas *lista, const char *Antena);
+
 #endif
