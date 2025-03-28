@@ -11,46 +11,51 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Funcoes.h"
- 
+#include "dados.h"
+#include "funcoes.h" 
+
 int main() {
-    ListaAntenas *lista = NULL;
+    ListaAntenas* lista = NULL;  // Lista de antenas
+    LocalNefasto* locais = NULL; // Lista de locais nefastos
     int opcao, x, y;
     char freq;
-     
+    lista = carregarAntenasDeFicheiro("antenas.txt");
+
     do {
-        printf("\nMenu:\n");
-        printf("1 - Inserir antena\n");
-        printf("2 - Remover antena\n");
-        printf("3 - Listar antenas\n");
-        printf("0 - Sair\n");
+        printf("\nGestão de Antenas \n");
+        printf("1. Adicionar Antena\n");
+        printf("2. Remover Antena\n");
+        printf("3. Listar Antenas\n");
+        printf("4. Deduzir Locais Nefastos\n");
+        printf("5. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &opcao);
-         
+
         switch (opcao) {
             case 1:
-                printf("Frequência da antena (A-Z): ");
-                scanf(" %c", &freq);
-                printf("Coordenadas (x y): ");
-                scanf("%d %d", &x, &y);
+                printf("Digite a frequência (char) e as coordenadas (x y): ");
+                scanf(" %c %d %d", &freq, &x, &y);
                 lista = inserirAntena(lista, freq, x, y);
                 break;
             case 2:
-                printf("Coordenadas da antena a remover (x y): ");
+                printf("Digite as coordenadas da antena a remover (x y): ");
                 scanf("%d %d", &x, &y);
                 lista = removerAntena(lista, x, y);
                 break;
             case 3:
                 listarAntenas(lista);
                 break;
-            case 0:
+            case 4:
+                locais = deduzirLocaisNefastos(lista);
+                listarLocaisNefastos(locais);
+                break;
+            case 5:
                 printf("Saindo...\n");
                 break;
             default:
                 printf("Opção inválida!\n");
         }
-    } while (opcao != 0);
-     
-    liberarLista(lista);
+    } while (opcao != 5);
+    
     return 0;
 }

@@ -56,27 +56,28 @@ ListaAntenas* removerAntena(ListaAntenas *lista, int x, int y) {
 void listarAntenas(ListaAntenas *lista) {
     ListaAntenas *atual = lista;
     printf("Lista de Antenas:\n");
-    while (atual) {
-        printf("Frequência: %c | Coordenadas: (%d, %d)\n", atual->antena.freq, atual->antena.x, atual->antena.y);
-        atual = atual->prox;
+    while (lista != NULL) {
+        
+        printf("Frequência: %c | Coordenadas: (%d, %d)\n", lista->antena.freq, lista->antena.x, lista->antena.y);
+        lista = lista->prox;
     }
 }
 
 /*
     Deduzir locais nefastos a partir das antenas
 */
-LocalNefasto* deduzirLocaisNefastos(Antena *lista) {
+LocalNefasto* deduzirLocaisNefastos(ListaAntenas *lista) {
     LocalNefasto *nefasta = NULL;
-    while (lista) {
-        if (lista->x % 2 == 0 && lista->y % 2 == 0) { // Exemplo de regra
-            LocalNefasto *novo = (LocalNefasto*) malloc(sizeof(LocalNefasto));
-            if (!novo) return nefasta;
-            novo->x = lista->x;
-            novo->y = lista->y;
-            novo->prox = nefasta;
-            nefasta = novo;
-        }
-        lista = lista->prox;
+    while (lista != NULL) { // ListaAntenas tem prox
+        // Criar um novo LocalNefasto
+        LocalNefasto *novo = (LocalNefasto*) malloc(sizeof(LocalNefasto));
+        if (!novo) return nefasta;
+        novo->x = lista->antena.x;
+        novo->y = lista->antena.y;
+        novo->prox = nefasta;
+        nefasta = novo;
+        
+        lista = lista->prox; // Correto!
     }
     return nefasta;
 }
@@ -93,8 +94,8 @@ void listarLocaisNefastos(LocalNefasto *lista) {
 /*
     Carregar ficheiro
 */
-Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro) {
-    FILE *file = fopen(nomeFicheiro, "r");
+Antena* carregarAntenasDeFicheiro(const char *antenas) {
+    FILE *file = fopen(antenas, "r");
     if (!file) {
         printf("Erro ao abrir o ficheiro!\n");
         return NULL;
