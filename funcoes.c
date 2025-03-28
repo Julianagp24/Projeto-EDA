@@ -109,3 +109,15 @@ Antena* carregarAntenasDeFicheiro(const char *antenas) {
     fclose(file);
     return lista;
 }
+
+void salvarAntenasBinario(ListaAntenas *lista, const char *Antena) {
+    FILE *file = fopen(Antena, "wb");
+    if (!file) {
+        printf("Erro ao abrir o ficheiro!\n");
+        return;
+    }
+    for (ListaAntenas *aux = lista; aux != NULL; aux = aux->prox) {
+        fwrite(&aux->antena, sizeof(Antena), 1, file);
+    }
+    fclose(file);
+}
