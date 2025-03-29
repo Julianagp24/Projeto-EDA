@@ -1,0 +1,84 @@
+\doxysection{C\+:/\+Users/julia/\+Desktop/\+Projeto EDA -\/ 31540/\+Projeto-\/\+EDA/src/funcoes.c File Reference}
+\hypertarget{funcoes_8c}{}\label{funcoes_8c}\index{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.c@{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}Funcoes.\+h"{}}\newline
+Include dependency graph for funcoes.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8c_af6bec96a08642f741823c84facd4240a}{inserir\+Antena}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista, char freq, int x, int y)
+\item 
+\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8c_a6f4906fbd3a96a82184017c4640dac83}{remover\+Antena}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista, int x, int y)
+\item 
+void \mbox{\hyperlink{funcoes_8c_ad23579c476e0d6cbe56b5814e261a614}{listar\+Antenas}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8c_af55afa7c7168e32a21f054375147fde8}{deduzir\+Locais\+Nefastos}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+void \mbox{\hyperlink{funcoes_8c_ac13e4d3efa42b2e212cbab5771112a5c}{listar\+Locais\+Nefastos}} (\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8c_abd7701998136012504c1336355253fef}{carregar\+Antenas\+De\+Ficheiro}} (const char \texorpdfstring{$\ast$}{*}antenas)
+\item 
+void \mbox{\hyperlink{funcoes_8c_acf391e848c4dd29822f8c5b9a0156289}{salvar\+Antenas\+Binario}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista, const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{struct_antena}{Antena}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Juliana Pereira (\href{mailto:31540@alunos.ipca.pt}{\texttt{ 31540@alunos.\+ipca.\+pt}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/03-\/28
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{funcoes_8c_abd7701998136012504c1336355253fef}\index{funcoes.c@{funcoes.c}!carregarAntenasDeFicheiro@{carregarAntenasDeFicheiro}}
+\index{carregarAntenasDeFicheiro@{carregarAntenasDeFicheiro}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{carregarAntenasDeFicheiro()}{carregarAntenasDeFicheiro()}}
+{\footnotesize\ttfamily \label{funcoes_8c_abd7701998136012504c1336355253fef} 
+\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} carregar\+Antenas\+De\+Ficheiro (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{antenas}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8c_af55afa7c7168e32a21f054375147fde8}\index{funcoes.c@{funcoes.c}!deduzirLocaisNefastos@{deduzirLocaisNefastos}}
+\index{deduzirLocaisNefastos@{deduzirLocaisNefastos}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{deduzirLocaisNefastos()}{deduzirLocaisNefastos()}}
+{\footnotesize\ttfamily \label{funcoes_8c_af55afa7c7168e32a21f054375147fde8} 
+\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*} deduzir\+Locais\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8c_af6bec96a08642f741823c84facd4240a}\index{funcoes.c@{funcoes.c}!inserirAntena@{inserirAntena}}
+\index{inserirAntena@{inserirAntena}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{inserirAntena()}{inserirAntena()}}
+{\footnotesize\ttfamily \label{funcoes_8c_af6bec96a08642f741823c84facd4240a} 
+\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} inserir\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{char}]{freq}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8c_ad23579c476e0d6cbe56b5814e261a614}\index{funcoes.c@{funcoes.c}!listarAntenas@{listarAntenas}}
+\index{listarAntenas@{listarAntenas}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{listarAntenas()}{listarAntenas()}}
+{\footnotesize\ttfamily \label{funcoes_8c_ad23579c476e0d6cbe56b5814e261a614} 
+void listar\+Antenas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8c_ac13e4d3efa42b2e212cbab5771112a5c}\index{funcoes.c@{funcoes.c}!listarLocaisNefastos@{listarLocaisNefastos}}
+\index{listarLocaisNefastos@{listarLocaisNefastos}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{listarLocaisNefastos()}{listarLocaisNefastos()}}
+{\footnotesize\ttfamily \label{funcoes_8c_ac13e4d3efa42b2e212cbab5771112a5c} 
+void listar\+Locais\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8c_a6f4906fbd3a96a82184017c4640dac83}\index{funcoes.c@{funcoes.c}!removerAntena@{removerAntena}}
+\index{removerAntena@{removerAntena}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{removerAntena()}{removerAntena()}}
+{\footnotesize\ttfamily \label{funcoes_8c_a6f4906fbd3a96a82184017c4640dac83} 
+\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} remover\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8c_acf391e848c4dd29822f8c5b9a0156289}\index{funcoes.c@{funcoes.c}!salvarAntenasBinario@{salvarAntenasBinario}}
+\index{salvarAntenasBinario@{salvarAntenasBinario}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{salvarAntenasBinario()}{salvarAntenasBinario()}}
+{\footnotesize\ttfamily \label{funcoes_8c_acf391e848c4dd29822f8c5b9a0156289} 
+void salvar\+Antenas\+Binario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{Antena}{}\end{DoxyParamCaption})}
+
