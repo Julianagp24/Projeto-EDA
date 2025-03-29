@@ -13,6 +13,7 @@
 #define FUNCOES_H
 
 #include "dados.h"
+#include <stdbool.h>
 
 typedef struct ListaAntenas {
     Antena antena;
@@ -42,6 +43,8 @@ Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro);
 /*
     Função para salvar antenas em binário
 */
-void salvarAntenasBinario(ListaAntenas *lista, const char *Antena);
+bool gravarAntenasBinario(ListaAntenas *lista);
+ListaAntenas* lerAntenasBinario(const char* nomeFicheiro);
+
 
 #endif

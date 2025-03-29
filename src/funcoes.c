@@ -11,7 +11,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Funcoes.h"
+#include "funcoes.h"
+
+#pragma region "Antenas"
 
 /*
     Inserir uma antena na lista
@@ -63,6 +65,10 @@ void listarAntenas(ListaAntenas *lista) {
     }
 }
 
+#pragma endregion
+
+#pragma region "Nefastos"
+
 /*
     Deduzir locais nefastos a partir das antenas
 */
@@ -91,36 +97,88 @@ void listarLocaisNefastos(LocalNefasto *lista) {
         lista = lista->prox;
     }
 }
+
+#pragma endregion
+
+#pragma region "Carregar e Gravar Antenas"
+
 /*
     Carregar ficheiro
 */
-ListaAntenas* carregarAntenasDeFicheiro(const char *antenas) {
-    FILE *file = fopen(antenas, "r");
-    if (!file) {
+
+Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro) {
+    FILE *fp = fopen(nomeFicheiro, "r");
+    if (fp == NULL) {
         printf("Erro ao abrir o ficheiro!\n");
         return NULL;
     }
-    Antena *lista = NULL;
-    char freq;
-    int x, y;
-    while (fscanf(file, " %c %d %d", &freq, &x, &y) == 3) {
-        lista = inserirAntena(lista, freq, x, y);
+
+    Antena *antenas = (Antena*)malloc(sizeof(Antena) * 100); // Alocar espaço para 100 antenas
+    if (antenas == NULL) {
+        fclose(fp);
+        return NULL;
     }
-    fclose(file);
+
+    int i = 0;
+    while (fscanf(fp, "%c %d %d", &antenas[i].freq, &antenas[i].x, &antenas[i].y) == 3) {
+        i++;
+    }
+
+    fclose(fp);
+    return antenas;
+}
+
+/*
+    Gravar antenas em binário
+*/
+bool gravarAntenasBinario(ListaAntenas *lista) {
+    FILE *fp;
+
+    if (lista == NULL) return false;
+
+    // Abrir o ficheiro para escrita binária
+    fp = fopen("antena.bin", "wb");
+    if (fp == NULL) return false;
+
+    ListaAntenas *aux = lista;
+    while (aux) {
+        fwrite(&(aux->antena), sizeof(Antena), 1, fp);
+        aux = aux->prox;
+    }
+
+    fclose(fp);
+    return true;
+}
+
+/*
+    Le o ficheiro Antenas.bin
+*/
+ListaAntenas* lerAntenasBinario(const char* nomeFicheiro) {
+    FILE* fp;
+    ListaAntenas* lista = NULL;
+    ListaAntenas* aux;
+
+    if ((fp = fopen(nomeFicheiro, "rb")) == NULL) return NULL;
+
+    Antena antenaTemp;
+    while (fread(&antenaTemp, sizeof(Antena), 1, fp)) {
+        aux = (ListaAntenas*)malloc(sizeof(ListaAntenas));
+        if (aux == NULL) {
+            fclose(fp);
+            return lista;  // Retorna o que já foi lido se der erro de memória
+        }
+        aux->antena = antenaTemp;
+        aux->prox = lista;  // Insere no início da lista
+        lista = aux;
+    }
+    
+    fclose(fp);
     return lista;
 }
 
-void salvarAntenasBinario(ListaAntenas *lista, const char *Antena) {
-    FILE *file = fopen(Antena, "wb");
-    if (!file) {
-        printf("Erro ao abrir o ficheiro!\n");
-        return;
-    }
-    for (ListaAntenas *aux = lista; aux != NULL; aux = aux->prox) {
-        fwrite(&aux->antena, sizeof(Antena), 1, file);
-    }
-    fclose(file);
-}
+#pragma endregion
+
+#pragma region "Liberar lista"
 
 /*
 	Liberar lista
@@ -133,3 +191,5 @@ void liberarLista(ListaAntenas* lista) {
         free(aux);
     }
 }
+
+#pragma endregion

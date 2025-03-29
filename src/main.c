@@ -12,14 +12,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dados.h"
-#include "funcoes.h" 
+#include "funcoes.h"
+
+// Declare the function prototype if not already declared in the headers
+
+#include <stdbool.h>
 
 int main() {
     ListaAntenas* lista = NULL;  // Lista de antenas
     LocalNefasto* locais = NULL; // Lista de locais nefastos
     int opcao, x, y;
     char freq;
-    lista = carregarAntenasDeFicheiro("antenas.txt");
+    int bin;
+    lista = carregarAntenasDeFicheiro("./antenas.txt");
 
     do {
         printf("\nGestão de Antenas \n");
@@ -47,15 +52,20 @@ int main() {
                 break;
             case 4:
                 locais = deduzirLocaisNefastos(lista);
-                listarLocaisNefastos(locais);
+                bin = gravarAntenasBinario("./antenas.bin");
                 break;
             case 5:
+                bin = gravarAntenasBinario("./antenas.bin", lista);
+                if(bin == false){
+                    printf("Erro ao salvar o arquivo binário!\n");
+                }
                 printf("Saindo...\n");
+                break;
                 break;
             default:
                 printf("Opção inválida!\n");
         }
-    } while (opcao != 5);
+    } while (opcao != 6);
     
     return 0;
 }
