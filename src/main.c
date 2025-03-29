@@ -15,31 +15,34 @@
 #include "funcoes.h"
 
 int main() {
-    ListaAntenas* lista = NULL;  // Lista de antenas
-    LocalNefasto* locais = NULL; // Lista de locais nefastos
-    int opcao, x, y;
+    ListaAntenas *lista = NULL;
+    LocalNefasto *locaisNefastos = NULL;
+    int opcao;
     char freq;
-    int bin;
-    lista = carregarAntenasDeFicheiro("./antenas.txt");
+    int x, y;
 
     do {
-        printf("\nGestão de Antenas \n");
-        printf("1. Adicionar Antena\n");
-        printf("2. Remover Antena\n");
-        printf("3. Listar Antenas\n");
-        printf("4. Deduzir Locais Nefastos\n");
-        printf("5. Sair\n");
+        printf("\n--- Menu ---\n");
+        printf("1 - Inserir Antena\n");
+        printf("2 - Remover Antena\n");
+        printf("3 - Listar Antenas\n");
+        printf("4 - Deduzir Locais Nefastos\n");
+        printf("5 - Listar Locais Nefastos\n");
+        printf("6 - Gravar Antenas em Binário\n");
+        printf("7 - Ler Antenas do Binário\n");
+        printf("8 - Carregar Antenas do Ficheiro de Texto\n");
+        printf("9 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
             case 1:
-                printf("Digite a frequência (char) e as coordenadas (x y): ");
+                printf("Digite a frequência e coordenadas (freq x y): ");
                 scanf(" %c %d %d", &freq, &x, &y);
                 lista = inserirAntena(lista, freq, x, y);
                 break;
             case 2:
-                printf("Digite as coordenadas da antena a remover (x y): ");
+                printf("Digite as coordenadas para remover (x y): ");
                 scanf("%d %d", &x, &y);
                 lista = removerAntena(lista, x, y);
                 break;
@@ -47,21 +50,35 @@ int main() {
                 listarAntenas(lista);
                 break;
             case 4:
-                locais = deduzirLocaisNefastos(lista);
-                bin = gravarAntenasBinario("./antenas.bin");
+                locaisNefastos = deduzirLocaisNefastos(lista);
+                printf("Locais nefastos deduzidos!\n");
                 break;
             case 5:
-                bin = gravarAntenasBinario("./antenas.bin", lista);
-                if(bin == false){
-                    printf("Erro ao salvar o arquivo binário!\n");
-                }
-                printf("Saindo...\n");
+                listarLocaisNefastos(locaisNefastos);
                 break;
+            case 6:
+                if (gravarAntenasBinario(lista)) {
+                    printf("Ficheiro binário 'antena.bin' gravado com sucesso.\n");
+                } else {
+                    printf("Erro ao gravar o ficheiro binário!\n");
+                }
+                break;
+            case 7:
+                lista = lerAntenasBinario("antena.bin");
+                printf("Ficheiro binário lido com sucesso.\n");
+                break;
+            case 8:
+                lista = (ListaAntenas*)carregarAntenasDeFicheiro("antenas.txt");
+                printf("Ficheiro de texto carregado com sucesso.\n");
+                break;
+            case 9:
+                printf("Saindo...\n");
                 break;
             default:
                 printf("Opção inválida!\n");
         }
-    } while (opcao != 6);
-    
+    } while (opcao != 9);
+
+    liberarLista(lista);
     return 0;
 }
