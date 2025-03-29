@@ -14,10 +14,6 @@
 #include "dados.h"
 #include "funcoes.h"
 
-// Declare the function prototype if not already declared in the headers
-
-#include <stdbool.h>
-
 int main() {
     ListaAntenas* lista = NULL;  // Lista de antenas
     LocalNefasto* locais = NULL; // Lista de locais nefastos
