@@ -94,7 +94,7 @@ void listarLocaisNefastos(LocalNefasto *lista) {
 /*
     Carregar ficheiro
 */
-Antena* carregarAntenasDeFicheiro(const char *antenas) {
+ListaAntenas* carregarAntenasDeFicheiro(const char *antenas) {
     FILE *file = fopen(antenas, "r");
     if (!file) {
         printf("Erro ao abrir o ficheiro!\n");
@@ -120,4 +120,16 @@ void salvarAntenasBinario(ListaAntenas *lista, const char *Antena) {
         fwrite(&aux->antena, sizeof(Antena), 1, file);
     }
     fclose(file);
+}
+
+/*
+	Liberar lista
+*/
+void liberarLista(ListaAntenas* lista) {
+    ListaAntenas* aux;
+    while (lista) {
+        aux = lista;
+        lista = lista->prox;
+        free(aux);
+    }
 }

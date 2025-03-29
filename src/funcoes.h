@@ -35,7 +35,7 @@ void liberarLista(ListaAntenas *lista);
 /*
     Funções para manipulação de locais nefastos
 */
-LocalNefasto* deduzirLocaisNefastos(Antena *lista);
+LocalNefasto* deduzirLocaisNefastos(ListaAntenas *lista);
 void listarLocaisNefastos(LocalNefasto *lista);
 Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro);
 
