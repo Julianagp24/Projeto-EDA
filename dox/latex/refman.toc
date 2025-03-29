@@ -1,0 +1,52 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Antena Struct Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Member Data Documentation}{5}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}freq}{5}{subsubsection.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}x}{5}{subsubsection.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.1.3}y}{5}{subsubsection.3.1.1.3}%
+\contentsline {section}{\numberline {3.2}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Antenas Struct Reference}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Member Data Documentation}{6}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}antena}{6}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}prox}{6}{subsubsection.3.2.1.2}%
+\contentsline {section}{\numberline {3.3}Local\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Nefasto Struct Reference}{6}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Member Data Documentation}{6}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}prox}{6}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}x}{6}{subsubsection.3.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.3.1.3}y}{6}{subsubsection.3.3.1.3}%
+\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/julia/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto EDA -\/ 31540/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EDA/src/dados.h File Reference}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}dados.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/julia/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto EDA -\/ 31540/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EDA/src/funcoes.c File Reference}{7}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{8}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{8}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}carregarAntenasDeFicheiro()}{8}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}deduzirLocaisNefastos()}{8}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}inserirAntena()}{8}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}listarAntenas()}{8}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}listarLocaisNefastos()}{8}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}removerAntena()}{9}{subsubsection.4.3.2.6}%
+\contentsline {subsubsection}{\numberline {4.3.2.7}salvarAntenasBinario()}{9}{subsubsection.4.3.2.7}%
+\contentsline {section}{\numberline {4.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/julia/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto EDA -\/ 31540/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EDA/src/funcoes.h File Reference}{9}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{10}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Typedef Documentation}{10}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}ListaAntenas}{10}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}LocalNefasto}{10}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Function Documentation}{10}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}carregarAntenasDeFicheiro()}{10}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}deduzirLocaisNefastos()}{10}{subsubsection.4.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}inserirAntena()}{10}{subsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.4}liberarLista()}{11}{subsubsection.4.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.4.3.5}listarAntenas()}{11}{subsubsection.4.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.4.3.6}listarLocaisNefastos()}{11}{subsubsection.4.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.4.3.7}removerAntena()}{11}{subsubsection.4.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.4.3.8}salvarAntenasBinario()}{11}{subsubsection.4.4.3.8}%
+\contentsline {section}{\numberline {4.5}funcoes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{11}{section.4.5}%
+\contentsline {section}{\numberline {4.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/julia/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto EDA -\/ 31540/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EDA/src/main.c File Reference}{12}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{12}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{12}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}main()}{12}{subsubsection.4.6.2.1}%
