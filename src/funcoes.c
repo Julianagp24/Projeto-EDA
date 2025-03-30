@@ -184,6 +184,7 @@ ListaAntenas* lerAntenasBinario(const char* nomeFicheiro) {
 	Liberar lista
 */
 void liberarLista(ListaAntenas* lista) {
+
     ListaAntenas* aux;
     while (lista) {
         aux = lista;
@@ -191,5 +192,6 @@ void liberarLista(ListaAntenas* lista) {
         free(aux);
     }
 }
+
 
 #pragma endregion
