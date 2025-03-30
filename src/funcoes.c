@@ -23,10 +23,10 @@ ListaAntenas* inserirAntena(ListaAntenas *lista, char freq, int x, int y) {
     if (!nova) {
         printf("Erro ao alocar memória!\n");
         return lista;
-    }
+    } 
     nova->antena.freq = freq;
     nova->antena.x = x;
-    nova->antena.y = y;
+    nova->antena.y = y; 
     nova->prox = lista;
     return nova;
 }
@@ -50,7 +50,7 @@ ListaAntenas* removerAntena(ListaAntenas *lista, int x, int y) {
     }
     printf("Antena não encontrada!\n");
     return lista;
- }
+}
  
 /*
     Listar todas as antenas
