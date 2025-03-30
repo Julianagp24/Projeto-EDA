@@ -38,11 +38,12 @@ void liberarLista(ListaAntenas *lista);
 */
 LocalNefasto* deduzirLocaisNefastos(ListaAntenas *lista);
 void listarLocaisNefastos(LocalNefasto *lista);
-Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro);
+
 
 /*
     Função para salvar antenas em binário
 */
+Antena* carregarAntenasDeFicheiro(const char *nomeFicheiro);
 bool gravarAntenasBinario(ListaAntenas *lista);
 ListaAntenas* lerAntenasBinario(const char* nomeFicheiro);
 
