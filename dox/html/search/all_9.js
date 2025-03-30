@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['salvarantenasbinario_0',['salvarAntenasBinario',['../funcoes_8c.html#acf391e848c4dd29822f8c5b9a0156289',1,'salvarAntenasBinario(ListaAntenas *lista, const char *Antena):&#160;funcoes.c'],['../funcoes_8h.html#acf391e848c4dd29822f8c5b9a0156289',1,'salvarAntenasBinario(ListaAntenas *lista, const char *Antena):&#160;funcoes.c']]]
+  ['removerantena_0',['removerAntena',['../funcoes_8c.html#a6f4906fbd3a96a82184017c4640dac83',1,'removerAntena(ListaAntenas *lista, int x, int y):&#160;funcoes.c'],['../funcoes_8h.html#a6f4906fbd3a96a82184017c4640dac83',1,'removerAntena(ListaAntenas *lista, int x, int y):&#160;funcoes.c']]]
 ];

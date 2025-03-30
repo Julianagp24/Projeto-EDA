@@ -26,11 +26,13 @@
 \contentsline {subsection}{\numberline {4.3.2}Function Documentation}{8}{subsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.2.1}carregarAntenasDeFicheiro()}{8}{subsubsection.4.3.2.1}%
 \contentsline {subsubsection}{\numberline {4.3.2.2}deduzirLocaisNefastos()}{8}{subsubsection.4.3.2.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.3}inserirAntena()}{8}{subsubsection.4.3.2.3}%
-\contentsline {subsubsection}{\numberline {4.3.2.4}listarAntenas()}{8}{subsubsection.4.3.2.4}%
-\contentsline {subsubsection}{\numberline {4.3.2.5}listarLocaisNefastos()}{8}{subsubsection.4.3.2.5}%
-\contentsline {subsubsection}{\numberline {4.3.2.6}removerAntena()}{9}{subsubsection.4.3.2.6}%
-\contentsline {subsubsection}{\numberline {4.3.2.7}salvarAntenasBinario()}{9}{subsubsection.4.3.2.7}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}gravarAntenasBinario()}{8}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}inserirAntena()}{8}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}lerAntenasBinario()}{8}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}liberarLista()}{9}{subsubsection.4.3.2.6}%
+\contentsline {subsubsection}{\numberline {4.3.2.7}listarAntenas()}{9}{subsubsection.4.3.2.7}%
+\contentsline {subsubsection}{\numberline {4.3.2.8}listarLocaisNefastos()}{9}{subsubsection.4.3.2.8}%
+\contentsline {subsubsection}{\numberline {4.3.2.9}removerAntena()}{9}{subsubsection.4.3.2.9}%
 \contentsline {section}{\numberline {4.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/julia/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto EDA -\/ 31540/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EDA/src/funcoes.h File Reference}{9}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Detailed Description}{10}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Typedef Documentation}{10}{subsection.4.4.2}%
@@ -39,14 +41,15 @@
 \contentsline {subsection}{\numberline {4.4.3}Function Documentation}{10}{subsection.4.4.3}%
 \contentsline {subsubsection}{\numberline {4.4.3.1}carregarAntenasDeFicheiro()}{10}{subsubsection.4.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.4.3.2}deduzirLocaisNefastos()}{10}{subsubsection.4.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.4.3.3}inserirAntena()}{10}{subsubsection.4.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.4.3.4}liberarLista()}{11}{subsubsection.4.4.3.4}%
-\contentsline {subsubsection}{\numberline {4.4.3.5}listarAntenas()}{11}{subsubsection.4.4.3.5}%
-\contentsline {subsubsection}{\numberline {4.4.3.6}listarLocaisNefastos()}{11}{subsubsection.4.4.3.6}%
-\contentsline {subsubsection}{\numberline {4.4.3.7}removerAntena()}{11}{subsubsection.4.4.3.7}%
-\contentsline {subsubsection}{\numberline {4.4.3.8}salvarAntenasBinario()}{11}{subsubsection.4.4.3.8}%
-\contentsline {section}{\numberline {4.5}funcoes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{11}{section.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}gravarAntenasBinario()}{10}{subsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.4}inserirAntena()}{11}{subsubsection.4.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.4.3.5}lerAntenasBinario()}{11}{subsubsection.4.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.4.3.6}liberarLista()}{11}{subsubsection.4.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.4.3.7}listarAntenas()}{11}{subsubsection.4.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.4.3.8}listarLocaisNefastos()}{11}{subsubsection.4.4.3.8}%
+\contentsline {subsubsection}{\numberline {4.4.3.9}removerAntena()}{11}{subsubsection.4.4.3.9}%
+\contentsline {section}{\numberline {4.5}funcoes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{12}{section.4.5}%
 \contentsline {section}{\numberline {4.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/julia/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto EDA -\/ 31540/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Projeto-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}EDA/src/main.c File Reference}{12}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}Detailed Description}{12}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{12}{subsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.2.1}main()}{12}{subsubsection.4.6.2.1}%
+\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{13}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}main()}{13}{subsubsection.4.6.2.1}%

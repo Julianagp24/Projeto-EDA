@@ -1,6 +1,7 @@
 \doxysection{C\+:/\+Users/julia/\+Desktop/\+Projeto EDA -\/ 31540/\+Projeto-\/\+EDA/src/funcoes.h File Reference}
 \hypertarget{funcoes_8h}{}\label{funcoes_8h}\index{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h@{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h}}
 {\ttfamily \#include "{}dados.\+h"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
 Include dependency graph for funcoes.\+h\+:
 % FIG 0
 This graph shows which files directly or indirectly include this file\+:
@@ -30,13 +31,15 @@ void \mbox{\hyperlink{funcoes_8h_ad23579c476e0d6cbe56b5814e261a614}{listar\+Ante
 \item 
 void \mbox{\hyperlink{funcoes_8h_a19f73153fe51ec1c39b69ecc6e6f4932}{liberar\+Lista}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista)
 \item 
-\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8h_aee1698a6462495b23d0876659ce447f2}{deduzir\+Locais\+Nefastos}} (\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}lista)
+\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8h_af55afa7c7168e32a21f054375147fde8}{deduzir\+Locais\+Nefastos}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista)
 \item 
 void \mbox{\hyperlink{funcoes_8h_ac13e4d3efa42b2e212cbab5771112a5c}{listar\+Locais\+Nefastos}} (\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*}lista)
 \item 
 \mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8h_a948a65b6bc575a9e4743e13e6f6fff09}{carregar\+Antenas\+De\+Ficheiro}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
 \item 
-void \mbox{\hyperlink{funcoes_8h_acf391e848c4dd29822f8c5b9a0156289}{salvar\+Antenas\+Binario}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista, const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{struct_antena}{Antena}})
+bool \mbox{\hyperlink{funcoes_8h_a21bae3c88971976b9489f09235940624}{gravar\+Antenas\+Binario}} (\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{funcoes_8h_ab9470abb5c6fdd2914a0e0fc11ef7b09}{ler\+Antenas\+Binario}} (const char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
 \end{DoxyCompactItemize}
 
 
@@ -77,17 +80,29 @@ typedef struct Local\+Nefasto Local\+Nefasto}
 {\footnotesize\ttfamily \label{funcoes_8h_a948a65b6bc575a9e4743e13e6f6fff09} 
 \mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*} carregar\+Antenas\+De\+Ficheiro (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro}{}\end{DoxyParamCaption})}
 
-\Hypertarget{funcoes_8h_aee1698a6462495b23d0876659ce447f2}\index{funcoes.h@{funcoes.h}!deduzirLocaisNefastos@{deduzirLocaisNefastos}}
+\Hypertarget{funcoes_8h_af55afa7c7168e32a21f054375147fde8}\index{funcoes.h@{funcoes.h}!deduzirLocaisNefastos@{deduzirLocaisNefastos}}
 \index{deduzirLocaisNefastos@{deduzirLocaisNefastos}!funcoes.h@{funcoes.h}}
 \doxysubsubsection{\texorpdfstring{deduzirLocaisNefastos()}{deduzirLocaisNefastos()}}
-{\footnotesize\ttfamily \label{funcoes_8h_aee1698a6462495b23d0876659ce447f2} 
-\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*} deduzir\+Locais\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_antena}{Antena}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{funcoes_8h_af55afa7c7168e32a21f054375147fde8} 
+\mbox{\hyperlink{struct_local_nefasto}{Local\+Nefasto}} \texorpdfstring{$\ast$}{*} deduzir\+Locais\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8h_a21bae3c88971976b9489f09235940624}\index{funcoes.h@{funcoes.h}!gravarAntenasBinario@{gravarAntenasBinario}}
+\index{gravarAntenasBinario@{gravarAntenasBinario}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{gravarAntenasBinario()}{gravarAntenasBinario()}}
+{\footnotesize\ttfamily \label{funcoes_8h_a21bae3c88971976b9489f09235940624} 
+bool gravar\+Antenas\+Binario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{}\end{DoxyParamCaption})}
 
 \Hypertarget{funcoes_8h_af6bec96a08642f741823c84facd4240a}\index{funcoes.h@{funcoes.h}!inserirAntena@{inserirAntena}}
 \index{inserirAntena@{inserirAntena}!funcoes.h@{funcoes.h}}
 \doxysubsubsection{\texorpdfstring{inserirAntena()}{inserirAntena()}}
 {\footnotesize\ttfamily \label{funcoes_8h_af6bec96a08642f741823c84facd4240a} 
 \mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} inserir\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{char}]{freq}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{funcoes_8h_ab9470abb5c6fdd2914a0e0fc11ef7b09}\index{funcoes.h@{funcoes.h}!lerAntenasBinario@{lerAntenasBinario}}
+\index{lerAntenasBinario@{lerAntenasBinario}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{lerAntenasBinario()}{lerAntenasBinario()}}
+{\footnotesize\ttfamily \label{funcoes_8h_ab9470abb5c6fdd2914a0e0fc11ef7b09} 
+\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} ler\+Antenas\+Binario (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro}{}\end{DoxyParamCaption})}
 
 \Hypertarget{funcoes_8h_a19f73153fe51ec1c39b69ecc6e6f4932}\index{funcoes.h@{funcoes.h}!liberarLista@{liberarLista}}
 \index{liberarLista@{liberarLista}!funcoes.h@{funcoes.h}}
@@ -112,10 +127,4 @@ void listar\+Locais\+Nefastos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{s
 \doxysubsubsection{\texorpdfstring{removerAntena()}{removerAntena()}}
 {\footnotesize\ttfamily \label{funcoes_8h_a6f4906fbd3a96a82184017c4640dac83} 
 \mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*} remover\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
-
-\Hypertarget{funcoes_8h_acf391e848c4dd29822f8c5b9a0156289}\index{funcoes.h@{funcoes.h}!salvarAntenasBinario@{salvarAntenasBinario}}
-\index{salvarAntenasBinario@{salvarAntenasBinario}!funcoes.h@{funcoes.h}}
-\doxysubsubsection{\texorpdfstring{salvarAntenasBinario()}{salvarAntenasBinario()}}
-{\footnotesize\ttfamily \label{funcoes_8h_acf391e848c4dd29822f8c5b9a0156289} 
-void salvar\+Antenas\+Binario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_antenas}{Lista\+Antenas}} \texorpdfstring{$\ast$}{*}}]{lista}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{Antena}{}\end{DoxyParamCaption})}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.29)  29 MAR 2025 00:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.29)  30 MAR 2025 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,8 +741,7 @@ tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count353
 \l__pdf_internal_box=\box124
-)
-No file refman.aux.
+) (refman.aux)
 \openout1 = `refman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 209.
@@ -825,12 +824,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
 Package backref Info: ** backref set up for natbib ** on input line 209.
 Package hyperref Info: Link coloring ON on input line 209.
+(refman.out) (refman.out)
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-No file refman.toc.
+\Etoc@tf=\read4
 Package hyperref Info: Option `pageanchor' set `false' on input line 217.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 217.
 
@@ -843,6 +843,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 223.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 223
 .
+
 (C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -871,6 +872,15 @@ a/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 231.
+
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 231.
+[1]
+
+[2]
 Package hyperref Info: Option `pageanchor' set `true' on input line 234.
 
 Chapter 1.
@@ -883,24 +893,8 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (annotated.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 3.
-
-
-LaTeX Warning: Reference `struct_antena' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `struct_lista_antenas' on page 1 undefined on input li
-ne 4.
-
-
-LaTeX Warning: Reference `struct_local_nefasto' on page 1 undefined on input li
-ne 5.
-
 )
 
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 238.
 [1
 
 
@@ -910,20 +904,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ]
 Chapter 2.
-(files.tex
-
-LaTeX Warning: Reference `dados_8h' on page 3 undefined on input line 3.
-
-
-LaTeX Warning: Reference `funcoes_8c' on page 3 undefined on input line 4.
-
-
-LaTeX Warning: Reference `funcoes_8h' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Reference `main_8c' on page 3 undefined on input line 6.
-
-)
+(files.tex)
 
 [3]
 
@@ -963,37 +944,36 @@ Chapter 4.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 28.
+(Font)              scaled to size 8.99994pt on input line 32.
 
-Underfull \hbox (badness 10000) detected at line 28
+Underfull \hbox (badness 10000) detected at line 32
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 31
+Underfull \hbox (badness 10000) detected at line 35
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 34
+Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 37
+Underfull \hbox (badness 10000) detected at line 41
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 47.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 51.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 51.
 
 
 [8]) (funcoes_8h.tex
-Underfull \hbox (badness 10000) detected at line 44
-[][][]
- []
 
-
+[9]
 Underfull \hbox (badness 10000) detected at line 47
 [][][]
  []
@@ -1009,10 +989,10 @@ Underfull \hbox (badness 10000) detected at line 53
  []
 
 
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
 
-[9]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
 
 
 [10]) (funcoes_8h_source.tex
@@ -1028,6 +1008,8 @@ Underfull \hbox (badness 10000) detected at line 20
  []
 
 
+
+[12]
 Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
@@ -1039,16 +1021,17 @@ Underfull \hbox (badness 10000) detected at line 26
 
 )
 
-[12]
+[13]
+
+[14
+
+]
 No file refman.ind.
 (refman.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1059,14 +1042,14 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  12F58E482FC588FA2A4E059C32C8973C;10583.
+(rerunfilecheck)             Before: 12F58E482FC588FA2A4E059C32C8973C;10583
+(rerunfilecheck)             After:  C7392871E329F2CF4A90964DFE11B702;11206.
  ) 
 Here is how much of TeX's memory you used:
- 18233 strings out of 473682
- 297049 string characters out of 5719216
- 714650 words of memory out of 5000000
- 40876 multiletter control sequences out of 15000+600000
+ 18309 strings out of 473682
+ 298871 string characters out of 5719216
+ 718385 words of memory out of 5000000
+ 40938 multiletter control sequences out of 15000+600000
  601110 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,16n,117p,590b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1079,9 +1062,9 @@ ts/type1/urw/courier/ucrro8a.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/
 fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/julia/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Users/julia/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (14 pages, 144973 bytes).
+Output written on refman.pdf (18 pages, 182862 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 598 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
+ 409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -110,6 +110,7 @@ $(function(){initNavTree('funcoes_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dados_8h_source.html">dados.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for funcoes.h:</div>
 <div class="dyncontent">
@@ -147,14 +148,16 @@ Functions</h2></td></tr>
 <tr class="separator:ad23579c476e0d6cbe56b5814e261a614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f73153fe51ec1c39b69ecc6e6f4932" id="r_a19f73153fe51ec1c39b69ecc6e6f4932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19f73153fe51ec1c39b69ecc6e6f4932">liberarLista</a> (<a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *lista)</td></tr>
 <tr class="separator:a19f73153fe51ec1c39b69ecc6e6f4932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee1698a6462495b23d0876659ce447f2" id="r_aee1698a6462495b23d0876659ce447f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_local_nefasto.html">LocalNefasto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee1698a6462495b23d0876659ce447f2">deduzirLocaisNefastos</a> (<a class="el" href="struct_antena.html">Antena</a> *lista)</td></tr>
-<tr class="separator:aee1698a6462495b23d0876659ce447f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55afa7c7168e32a21f054375147fde8" id="r_af55afa7c7168e32a21f054375147fde8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_local_nefasto.html">LocalNefasto</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af55afa7c7168e32a21f054375147fde8">deduzirLocaisNefastos</a> (<a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *lista)</td></tr>
+<tr class="separator:af55afa7c7168e32a21f054375147fde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13e4d3efa42b2e212cbab5771112a5c" id="r_ac13e4d3efa42b2e212cbab5771112a5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac13e4d3efa42b2e212cbab5771112a5c">listarLocaisNefastos</a> (<a class="el" href="struct_local_nefasto.html">LocalNefasto</a> *lista)</td></tr>
 <tr class="separator:ac13e4d3efa42b2e212cbab5771112a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948a65b6bc575a9e4743e13e6f6fff09" id="r_a948a65b6bc575a9e4743e13e6f6fff09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_antena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a948a65b6bc575a9e4743e13e6f6fff09">carregarAntenasDeFicheiro</a> (const char *nomeFicheiro)</td></tr>
 <tr class="separator:a948a65b6bc575a9e4743e13e6f6fff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf391e848c4dd29822f8c5b9a0156289" id="r_acf391e848c4dd29822f8c5b9a0156289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf391e848c4dd29822f8c5b9a0156289">salvarAntenasBinario</a> (<a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *lista, const char *<a class="el" href="struct_antena.html">Antena</a>)</td></tr>
-<tr class="separator:acf391e848c4dd29822f8c5b9a0156289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bae3c88971976b9489f09235940624" id="r_a21bae3c88971976b9489f09235940624"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21bae3c88971976b9489f09235940624">gravarAntenasBinario</a> (<a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *lista)</td></tr>
+<tr class="separator:a21bae3c88971976b9489f09235940624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9470abb5c6fdd2914a0e0fc11ef7b09" id="r_ab9470abb5c6fdd2914a0e0fc11ef7b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9470abb5c6fdd2914a0e0fc11ef7b09">lerAntenasBinario</a> (const char *nomeFicheiro)</td></tr>
+<tr class="separator:ab9470abb5c6fdd2914a0e0fc11ef7b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Juliana Pereira (<a href="#" onclick="location.href='mai'+'lto:'+'315'+'40'+'@al'+'un'+'os.'+'ip'+'ca.'+'pt'; return false;">31540<span class="obfuscator">.nosp@m.</span>@alu<span class="obfuscator">.nosp@m.</span>nos.i<span class="obfuscator">.nosp@m.</span>pca.<span class="obfuscator">.nosp@m.</span>pt</a>) </dd></dl>
@@ -208,8 +211,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aee1698a6462495b23d0876659ce447f2" name="aee1698a6462495b23d0876659ce447f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee1698a6462495b23d0876659ce447f2">&#9670;&#160;</a></span>deduzirLocaisNefastos()</h2>
+<a id="af55afa7c7168e32a21f054375147fde8" name="af55afa7c7168e32a21f054375147fde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55afa7c7168e32a21f054375147fde8">&#9670;&#160;</a></span>deduzirLocaisNefastos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +220,24 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="struct_local_nefasto.html">LocalNefasto</a> * deduzirLocaisNefastos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_antena.html">Antena</a> *</td>          <td class="paramname"><span class="paramname"><em>lista</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *</td>          <td class="paramname"><span class="paramname"><em>lista</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21bae3c88971976b9489f09235940624" name="a21bae3c88971976b9489f09235940624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21bae3c88971976b9489f09235940624">&#9670;&#160;</a></span>gravarAntenasBinario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gravarAntenasBinario </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *</td>          <td class="paramname"><span class="paramname"><em>lista</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -250,6 +270,23 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9470abb5c6fdd2914a0e0fc11ef7b09" name="ab9470abb5c6fdd2914a0e0fc11ef7b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9470abb5c6fdd2914a0e0fc11ef7b09">&#9670;&#160;</a></span>lerAntenasBinario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_lista_antenas.html">ListaAntenas</a> * lerAntenasBinario </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>nomeFicheiro</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -327,27 +364,6 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acf391e848c4dd29822f8c5b9a0156289" name="acf391e848c4dd29822f8c5b9a0156289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf391e848c4dd29822f8c5b9a0156289">&#9670;&#160;</a></span>salvarAntenasBinario()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void salvarAntenasBinario </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lista_antenas.html">ListaAntenas</a> *</td>          <td class="paramname"><span class="paramname"><em>lista</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>Antena</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inserirantena_0',['inserirAntena',['../funcoes_8c.html#af6bec96a08642f741823c84facd4240a',1,'inserirAntena(ListaAntenas *lista, char freq, int x, int y):&#160;funcoes.c'],['../funcoes_8h.html#af6bec96a08642f741823c84facd4240a',1,'inserirAntena(ListaAntenas *lista, char freq, int x, int y):&#160;funcoes.c']]]
+  ['gravarantenasbinario_0',['gravarAntenasBinario',['../funcoes_8c.html#a21bae3c88971976b9489f09235940624',1,'gravarAntenasBinario(ListaAntenas *lista):&#160;funcoes.c'],['../funcoes_8h.html#a21bae3c88971976b9489f09235940624',1,'gravarAntenasBinario(ListaAntenas *lista):&#160;funcoes.c']]]
 ];

@@ -24,16 +24,20 @@
 \indexentry{carregarAntenasDeFicheiro@{carregarAntenasDeFicheiro}!funcoes.c@{funcoes.c}|hyperpage}{8}
 \indexentry{funcoes.c@{funcoes.c}!deduzirLocaisNefastos@{deduzirLocaisNefastos}|hyperpage}{8}
 \indexentry{deduzirLocaisNefastos@{deduzirLocaisNefastos}!funcoes.c@{funcoes.c}|hyperpage}{8}
+\indexentry{funcoes.c@{funcoes.c}!gravarAntenasBinario@{gravarAntenasBinario}|hyperpage}{8}
+\indexentry{gravarAntenasBinario@{gravarAntenasBinario}!funcoes.c@{funcoes.c}|hyperpage}{8}
 \indexentry{funcoes.c@{funcoes.c}!inserirAntena@{inserirAntena}|hyperpage}{8}
 \indexentry{inserirAntena@{inserirAntena}!funcoes.c@{funcoes.c}|hyperpage}{8}
-\indexentry{funcoes.c@{funcoes.c}!listarAntenas@{listarAntenas}|hyperpage}{8}
-\indexentry{listarAntenas@{listarAntenas}!funcoes.c@{funcoes.c}|hyperpage}{8}
-\indexentry{funcoes.c@{funcoes.c}!listarLocaisNefastos@{listarLocaisNefastos}|hyperpage}{8}
-\indexentry{listarLocaisNefastos@{listarLocaisNefastos}!funcoes.c@{funcoes.c}|hyperpage}{8}
-\indexentry{funcoes.c@{funcoes.c}!removerAntena@{removerAntena}|hyperpage}{8}
-\indexentry{removerAntena@{removerAntena}!funcoes.c@{funcoes.c}|hyperpage}{8}
-\indexentry{funcoes.c@{funcoes.c}!salvarAntenasBinario@{salvarAntenasBinario}|hyperpage}{9}
-\indexentry{salvarAntenasBinario@{salvarAntenasBinario}!funcoes.c@{funcoes.c}|hyperpage}{9}
+\indexentry{funcoes.c@{funcoes.c}!lerAntenasBinario@{lerAntenasBinario}|hyperpage}{8}
+\indexentry{lerAntenasBinario@{lerAntenasBinario}!funcoes.c@{funcoes.c}|hyperpage}{8}
+\indexentry{funcoes.c@{funcoes.c}!liberarLista@{liberarLista}|hyperpage}{8}
+\indexentry{liberarLista@{liberarLista}!funcoes.c@{funcoes.c}|hyperpage}{8}
+\indexentry{funcoes.c@{funcoes.c}!listarAntenas@{listarAntenas}|hyperpage}{9}
+\indexentry{listarAntenas@{listarAntenas}!funcoes.c@{funcoes.c}|hyperpage}{9}
+\indexentry{funcoes.c@{funcoes.c}!listarLocaisNefastos@{listarLocaisNefastos}|hyperpage}{9}
+\indexentry{listarLocaisNefastos@{listarLocaisNefastos}!funcoes.c@{funcoes.c}|hyperpage}{9}
+\indexentry{funcoes.c@{funcoes.c}!removerAntena@{removerAntena}|hyperpage}{9}
+\indexentry{removerAntena@{removerAntena}!funcoes.c@{funcoes.c}|hyperpage}{9}
 \indexentry{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h@{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h}|hyperpage}{9}
 \indexentry{funcoes.h@{funcoes.h}!ListaAntenas@{ListaAntenas}|hyperpage}{10}
 \indexentry{ListaAntenas@{ListaAntenas}!funcoes.h@{funcoes.h}|hyperpage}{10}
@@ -43,19 +47,21 @@
 \indexentry{carregarAntenasDeFicheiro@{carregarAntenasDeFicheiro}!funcoes.h@{funcoes.h}|hyperpage}{10}
 \indexentry{funcoes.h@{funcoes.h}!deduzirLocaisNefastos@{deduzirLocaisNefastos}|hyperpage}{10}
 \indexentry{deduzirLocaisNefastos@{deduzirLocaisNefastos}!funcoes.h@{funcoes.h}|hyperpage}{10}
+\indexentry{funcoes.h@{funcoes.h}!gravarAntenasBinario@{gravarAntenasBinario}|hyperpage}{10}
+\indexentry{gravarAntenasBinario@{gravarAntenasBinario}!funcoes.h@{funcoes.h}|hyperpage}{10}
 \indexentry{funcoes.h@{funcoes.h}!inserirAntena@{inserirAntena}|hyperpage}{10}
 \indexentry{inserirAntena@{inserirAntena}!funcoes.h@{funcoes.h}|hyperpage}{10}
-\indexentry{funcoes.h@{funcoes.h}!liberarLista@{liberarLista}|hyperpage}{10}
-\indexentry{liberarLista@{liberarLista}!funcoes.h@{funcoes.h}|hyperpage}{10}
+\indexentry{funcoes.h@{funcoes.h}!lerAntenasBinario@{lerAntenasBinario}|hyperpage}{11}
+\indexentry{lerAntenasBinario@{lerAntenasBinario}!funcoes.h@{funcoes.h}|hyperpage}{11}
+\indexentry{funcoes.h@{funcoes.h}!liberarLista@{liberarLista}|hyperpage}{11}
+\indexentry{liberarLista@{liberarLista}!funcoes.h@{funcoes.h}|hyperpage}{11}
 \indexentry{funcoes.h@{funcoes.h}!listarAntenas@{listarAntenas}|hyperpage}{11}
 \indexentry{listarAntenas@{listarAntenas}!funcoes.h@{funcoes.h}|hyperpage}{11}
 \indexentry{funcoes.h@{funcoes.h}!listarLocaisNefastos@{listarLocaisNefastos}|hyperpage}{11}
 \indexentry{listarLocaisNefastos@{listarLocaisNefastos}!funcoes.h@{funcoes.h}|hyperpage}{11}
 \indexentry{funcoes.h@{funcoes.h}!removerAntena@{removerAntena}|hyperpage}{11}
 \indexentry{removerAntena@{removerAntena}!funcoes.h@{funcoes.h}|hyperpage}{11}
-\indexentry{funcoes.h@{funcoes.h}!salvarAntenasBinario@{salvarAntenasBinario}|hyperpage}{11}
-\indexentry{salvarAntenasBinario@{salvarAntenasBinario}!funcoes.h@{funcoes.h}|hyperpage}{11}
-\indexentry{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h@{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h}|hyperpage}{11}
+\indexentry{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h@{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/funcoes.h}|hyperpage}{12}
 \indexentry{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/main.c@{C:/Users/julia/Desktop/Projeto EDA -\/ 31540/Projeto-\/EDA/src/main.c}|hyperpage}{12}
-\indexentry{main.c@{main.c}!main@{main}|hyperpage}{12}
-\indexentry{main@{main}!main.c@{main.c}|hyperpage}{12}
+\indexentry{main.c@{main.c}!main@{main}|hyperpage}{13}
+\indexentry{main@{main}!main.c@{main.c}|hyperpage}{13}
